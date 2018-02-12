@@ -15,6 +15,10 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+
+p {
+  margin-bottom: 20px;
+}
 .hero.is-info {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -31,7 +35,7 @@ h6 {
   line-height: 1.5;
 }
 
-.image--cover {
+.img-circle {
   border-radius: 50%;
   object-fit: cover;
   object-position: center right;
@@ -39,4 +43,58 @@ h6 {
 
 .img-centered {
   margin: auto;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.is-justify {
+  text-align: justify;
+}
+
+.dark-bg {
+  background-image: linear-gradient(to top, #052c65, #04326a);
+}
+
+.dark-bg h1{
+  color: #fff !important;
+}
+
+.dark-bg p{
+  color: #fff !important;
+}
+
+.dark-bg p strong{
+  color: #fff !important;
+}
+
+.skillset {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+
+.skillset div {
+  background: cyan;
+  padding: 10px;
+  margin: 10px;
+}
+
+.work-projects {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+}
+
+.work-projects div {
+  margin-bottom: 20px;
+}
+
+.work-projects figure {
+  width: 250px;
+}
+
+#contact {
+  color: #fff;
 }

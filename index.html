@@ -12,13 +12,13 @@
   <link rel="stylesheet" type="text/css" href="./css/landing.css">
 </head>
 <body>
-  <section class="hero is-info is-fullheight">
+  <section class="hero is-info is-fullheight" id="home">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item" href="../">
-              Norman
+              &nbsp;
             </a>
             <span class="navbar-burger burger" data-target="navbarMenu">
               <span></span>
@@ -28,23 +28,15 @@
           </div>
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item is-active">
+              <a class="navbar-item is-active" href="#home">
                 Home
               </a>
-              <a class="navbar-item">
-                Examples
+              <a class="navbar-item" href="#sample-work">
+                Sample Work
               </a>
-              <a class="navbar-item">
-                Documentation
+              <a class="navbar-item" href="#contact">
+                Contact Me
               </a>
-              <span class="navbar-item">
-                <a class="button is-white is-outlined is-small" href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html">
-                  <span class="icon">
-                    <i class="fa fa-github"></i>
-                  </span>
-                  <span>View Source</span>
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -58,7 +50,7 @@
             Normaneil E. Macutay
           </h1>
           <figure class="image is-128x128 img-centered">
-            <img class="image--cover" src="./images/norman.jpg" />
+            <img class="img-circle" src="./images/norman.jpg" />
           </figure>
           <h2 class="subtitle">
              Full Stack Developer
@@ -83,8 +75,105 @@
   </section>
 
   <section class="section">
-    Examples
+    <h1 class="title">
+      About Me
+    </h1>
+
+    <p>
+      <strong>Normaneil E. Macutay</strong> <small>normaneil.macutay@gmail.com</small> 
+    </p>
+    <p class="is-justify">I am a web developer from Bulacan, Philippines. Currently working in the corporate world as Website developer for 10 years, also doing freelancing work.</p>
+    <p class="is-justify">Moreover, I develop and design functional, creative, details and usability oriented websites as well as web applications by exposing the simplicity and the latest web standards as the main principles.</p>
+    <p class="is-justify">I am a full-time website developer in which you can depend on me as an available ongoing for years to come.</p>
   </section>
+
+  <section class="section no-padding dark-bg">
+    <div class="section ">
+      <h1 class="title text-color-white">
+          Skillset
+      </h1>
+      <p class="text-color-white"><strong>Programming Technologies</strong></p>
+      <div class="skillset">
+        <div  >PHP</div>
+        <div  >Python</div>
+        <div  >NodeJS</div>
+        <div  >MEAN Stack</div>
+        <div  >AngularJS</div>
+        <div  >JQuery</div>
+        <div  >ReactJS</div>
+        <div  >VueJS</div>
+        <div  >MySQL</div>
+        <div  >MongoDB</div>
+        <div  >CouchDB</div>
+        <div  >Apache SOLR</div>
+        <div  >Framework7</div>
+        <div  >Bulma</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sample-work">
+      <h1 class="title">
+        Works
+      </h1>
+
+      <div class="columns">
+        <div class="column">
+           <a href="http://remotestaff.com.ph" target="_blank">
+            <figure class="image">
+              <img class="" src="./images/remotestaffph.png" />
+            </figure>
+          </a>
+        </div>
+
+        <div class="column">
+          <a href="http://remotestaff.com.au" target="_blank">
+            <figure class="image">
+              <img class="" src="./images/remotestaffau.png" />
+            </figure>
+          </a>
+        </div>
+
+        <div class="column">
+          <a href="http://intimate.io" target="_blank">
+            <figure class="image">
+              <img class="" src="./images/intimateio.png" />
+            </figure>
+          </a>
+        </div>
+        
+        <div class="column">
+          <a href="http://sabongbarkadahan.com" target="_blank">
+            <figure class="image">
+              <img class="" src="./images/sabongbarkadahan.png" />
+            </figure>
+          </a>
+        </div>
+      </div>
+
+
+  </section>
+
+  <section class="section no-padding dark-bg" id="contact">
+      <div class="section ">
+        <h1 class="title text-color-white">
+            Contact Me
+        </h1>
+
+        <ul>
+          <li>Date Of Birth :  August 12 , 1977</li>
+          <li>Country :  Philippines</li>
+          <li>Resume : <a href="./resume_normaneil.pdf" target="_blank">Click here</a></li>
+          <li>Skype Id : normaneil</li>
+          <li>Email :  normaneil.macutay@gmail.com</li>
+          <li>Contact Number : +63947 - 657 - 2024</li>
+          <li>Facebook : <a href="https://www.facebook.com/normaneil.macutay" target="_blank">Click here</a></li>
+        </ul>
+
+
+      </div>
+  </section>
+
   <script async type="text/javascript" src="./js/bulma.js"></script>
 </body>
 </html>
