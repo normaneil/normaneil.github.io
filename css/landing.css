@@ -1,14 +1,25 @@
-html,body {
-  font-family: 'Open Sans', serif;
+html,
+body {
+    background: #f4f8fb;
+    font-family: 'Montserrat', 'Adobe Blank', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .hero.is-info {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('https://unsplash.it/1200/900?random') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+    ), url('../images/full_stack_developer.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 .hero .nav, .hero.is-success .nav {
@@ -18,4 +29,14 @@ html,body {
 .hero .subtitle {
   padding: 3rem 0;
   line-height: 1.5;
+}
+
+.image--cover {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.img-centered {
+  margin: auto;
 }
