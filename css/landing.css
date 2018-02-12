@@ -54,8 +54,8 @@ p {
 }
 
 .dark-bg {
-  background-image: linear-gradient(to top, #052c65, #04326a);
-  
+  background-image: linear-gradient(to top, #052c65, #000);
+
 }
 
 .dark-bg h1{
