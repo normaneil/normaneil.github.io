@@ -7,14 +7,14 @@ let licenseUri = myData.getAttribute("data-license-uri");
 // Replace the DEMO site ID with yours when you test your own FPS content.
 let fairplayCertUri = myData.getAttribute("data-fairplayCertUri"); // for base64 encoded binary cert data
 let fairplayCertDerUri = myData.getAttribute("data-fairplayCertDerUri"); // for cert .der file download
-console.log("fairplayCertUri", fairplayCertUri)
+
 // Create and set the license tokens when you test your own content.
 let widevineToken = myData.getAttribute("data-widevineToken");
 let playreadyToken = myData.getAttribute("data-playreadyToken");
 let fairplayToken = myData.getAttribute("data-fairplayToken");
-console.log("widevineToken", widevineToken)
-console.log("playreadyToken", playreadyToken)
-console.log("fairplayToken", fairplayToken)
+// console.log("widevineToken", widevineToken)
+// console.log("playreadyToken", playreadyToken)
+// console.log("fairplayToken", fairplayToken)
 
 function arrayToString(array) {
     var uint16array = new Uint16Array(array.buffer);
@@ -222,7 +222,7 @@ function configureDRM() {
         } else {
             console.log("No DRM supported in this browser");
         }
-
+        console.log("playerConfig", playerConfig);
         player.src(playerConfig);
     });
 }
