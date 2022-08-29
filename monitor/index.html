@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VideoJS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- VideoJS library and css -->
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <script src="https://unpkg.com/videojs-contrib-dash/dist/videojs-dash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-eme@3.7.0/dist/videojs-contrib-eme.min.js"></script>
+
+    <style>
+      .container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 320px;
+        height: 240px;
+      }
+
+      .video-box {
+        width: 475px;
+        height: 267px;
+      }
+
+      .video-js .vjs-big-play-button {
+        display: none;
+      }
+      .video-js .vjs-control-bar {
+        display: flex;
+      }
+
+      .video-js .vjs-fullscreen-control {
+        display: none;
+      }
+
+      .jw-controls .jw-icon-fullscreen {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="container">
+        <code
+          id="browserCheckResult"
+          data-hls-uri="https://d1892klpony6i.cloudfront.net/livecf/english/playlist.m3u8"
+        ></code>
+        <video
+          id="videojs-player"
+          class="video-js vjs-default-skin vjs-16-9"
+          controls
+        ></video>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
