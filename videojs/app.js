@@ -12,9 +12,9 @@ let fairplayCertDerUri = myData.getAttribute("data-fairplayCertDerUri"); // for 
 let widevineToken = myData.getAttribute("data-widevineToken");
 let playreadyToken = myData.getAttribute("data-playreadyToken");
 let fairplayToken = myData.getAttribute("data-fairplayToken");
-// console.log("widevineToken", widevineToken)
-// console.log("playreadyToken", playreadyToken)
-// console.log("fairplayToken", fairplayToken)
+console.log("widevineToken", widevineToken)
+console.log("playreadyToken", playreadyToken)
+console.log("fairplayToken", fairplayToken)
 
 function arrayToString(array) {
     var uint16array = new Uint16Array(array.buffer);
